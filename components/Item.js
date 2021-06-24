@@ -6,7 +6,10 @@ import {
 
 
 export default function Item({ title, year, poster }) {
+   
+
     return (
+
         <View style={styles.item}>
             <View style={{ flex: 1 }}>
                 <Image
@@ -29,6 +32,7 @@ const styles = StyleSheet.create({
         marginHorizontal: 16,
         borderRadius: 20,
         flexDirection: 'row',
+        width:500,
     },
     title: {
         fontSize: 32,
@@ -39,6 +43,6 @@ const styles = StyleSheet.create({
     imagePoster: {
         height: 250,
         width: 250,
-        borderRadius: 200,
+        borderRadius: 20,
     }
 })
